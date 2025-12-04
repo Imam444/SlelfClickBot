@@ -191,7 +191,7 @@ h1 {
 </div>
 
 <!-- Monetag SDK -->
-<script src='//libtl.com/sdk.js' data-zone='10081091' data-sdk='show_10081091'></script>
+<script src='//libtl.com/sdk.js' data-zone='10276283' data-sdk='show_10276283'></script>
 
 <script>
 let watchedAdsCount = parseInt(localStorage.getItem('watchedAdsCount')) || 0;
@@ -226,7 +226,7 @@ function updateProgressCircle(){
 // Watch Ad
 document.getElementById('watch-ad-btn').addEventListener('click', ()=>{
     if(!monetagLoaded){ alert('Ad service not loaded yet!'); return; }
-    show_10081091().then(()=>{
+    show_10276283().then(()=>{
         watchedAdsCount++;
         earnedPoints += 0.5;
         document.getElementById('watched-ads').textContent = watchedAdsCount;
@@ -269,3 +269,4 @@ function withdrawPoints(){
 
 </body>
 </html>
+
